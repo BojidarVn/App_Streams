@@ -7,6 +7,9 @@ on:
 jobs:
   cypress:
     runs-on: ubuntu-latest
+    env:
+      CYPRESS_email: ${{ secrets.CYPRESS_EMAIL }}
+      CYPRESS_password: ${{ secrets.CYPRESS_PASSWORD }}
 
     steps:
       - name: Checkout
@@ -28,6 +31,3 @@ jobs:
       # persistent data and UI deletion requires Google Authenticator OTP/TOTP.
       - name: Run Cypress smoke tests
         run: npm run cy:run:smoke
-        env:
-          CYPRESS_email: ${{ secrets.CYPRESS_EMAIL }}
-          CYPRESS_password: ${{ secrets.CYPRESS_PASSWORD }}
