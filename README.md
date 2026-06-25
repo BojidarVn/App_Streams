@@ -66,8 +66,8 @@ Then set the credentials:
 
 ```json
 {
-  "email": "test_qa_ex@example.com",
-  "password": "test_qa_ex@example.com"
+  "email": "<email>",
+  "password": "<password>"
 }
 ```
 
