@@ -1,5 +1,7 @@
 # Avtoikonom Admin E2E Automation
 
+[![Cypress](https://github.com/BojidarVn/App_Streams/actions/workflows/cypress.yml/badge.svg)](https://github.com/BojidarVn/App_Streams/actions/workflows/cypress.yml)
+
 ## Overview
 
 This project contains Cypress + TypeScript end-to-end tests for the Avtoikonom admin application:
