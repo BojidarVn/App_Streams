@@ -241,6 +241,8 @@ The GitHub Actions workflow is defined at:
 .github/workflows/cypress.yml
 ```
 
+The workflow runs the smoke suite on every push and pull request.
+
 CI runs only:
 
 - dependency installation
@@ -256,7 +258,6 @@ Credentials are expected to be provided through GitHub secrets:
 
 ## Future Improvements
 
-- Execute smoke tests automatically on every push while keeping lifecycle tests manual to avoid creating unnecessary test data.
 - Add a supported cleanup API or test-only cleanup mechanism if the application provides one.
 - Add dedicated reporting artifacts for CI runs.
 - Add `data-testid` attributes in the application for key actions and fields.
