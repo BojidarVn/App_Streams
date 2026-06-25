@@ -1,0 +1,14 @@
+node_modules/
+
+cypress.env.json
+cypress/downloads/
+cypress/screenshots/
+cypress/videos/
+
+dist/
+coverage/
+
+.idea/
+.vscode/
+.DS_Store
+npm-debug.log*

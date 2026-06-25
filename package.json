@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:smoke": "cypress run --spec \"cypress/e2e/login.cy.ts,cypress/e2e/partners-navigation.cy.ts\"",
+    "cy:run:lifecycle": "cypress run --spec cypress/e2e/partners.cy.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "cypress": "^15.18.0",
+    "typescript": "^6.0.3"
+  }
+}
