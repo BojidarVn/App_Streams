@@ -27,6 +27,14 @@ jobs:
       - name: Type check
         run: npm run typecheck
 
+      - name: Validate Cypress secrets
+        shell: bash
+        run: |
+          if [ -z "$CYPRESS_email" ] || [ -z "$CYPRESS_password" ]; then
+            echo "Missing Cypress credentials. Configure repository secrets CYPRESS_EMAIL and CYPRESS_PASSWORD."
+            exit 1
+          fi
+
       # The Partner lifecycle spec is excluded from CI because it creates
       # persistent data and UI deletion requires Google Authenticator OTP/TOTP.
       - name: Run Cypress smoke tests
